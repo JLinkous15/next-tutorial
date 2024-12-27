@@ -1,10 +1,7 @@
 import Link from 'next/link';
 import { FaceFrownIcon } from '@heroicons/react/24/outline';
-import { headers } from 'next/headers'
  
 export default async function NotFound() {
-  const headersList = await headers()
-  const domain = headersList.get('host')
 
   return (
     <main className="flex h-full flex-col items-center justify-center gap-2">
